@@ -26,8 +26,8 @@ elif len(user) < 10:
     print('string not long enough')
     
 
-print('Première lettre:', user[0])
-print('Première lettre:', user[-1])
+print(user[0])
+print(user[-1])
 
 
 user2 = 'Hello World'
@@ -36,4 +36,4 @@ for letter in user2:
     word_rebuilt += letter
     print(word_rebuilt)
     
-    
+
