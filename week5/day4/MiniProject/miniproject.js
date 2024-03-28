@@ -45,35 +45,35 @@ for(i=0; i<21; i++){
 }
 
 function colorcases() {
-    let colorcase = document.querySelectorAll('.case');
+    let colorcase = document.querySelectorAll('.case')
     colorcase.forEach(function(colorcase) {
         colorcase.addEventListener('click', function(event) {
-            event.preventDefault();
+            event.preventDefault()
             if (selectedColor) {
                 colorcase.style.backgroundColor = selectedColor;
             }
-        });
+        })
 
         colorcase.addEventListener('mousedown', function(event) {
-            event.preventDefault();
-            isMouseDown = true;
+            event.preventDefault()
+            isMouseDown = true
             if (selectedColor) {
-                colorcase.style.backgroundColor = selectedColor;
+                colorcase.style.backgroundColor = selectedColor
             }
-        });
+        })
 
         colorcase.addEventListener('mouseover', function(event) {
-            event.preventDefault();
+            event.preventDefault()
             if (isMouseDown && selectedColor) {
-                colorcase.style.backgroundColor = selectedColor;
+                colorcase.style.backgroundColor = selectedColor
             }
-        });
+        })
 
         colorcase.addEventListener('mouseup', function(event) {
-            event.preventDefault();
-            isMouseDown = false;
-        });
-    });
+            event.preventDefault()
+            isMouseDown = false
+        })
+    })
 }
 
 colorcases()
