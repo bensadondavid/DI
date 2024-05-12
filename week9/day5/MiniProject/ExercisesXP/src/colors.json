@@ -1,0 +1,44 @@
+
+[
+        {
+            "background": "#A7FFEB",  
+            "text": "#004D40"         
+        },
+        {
+            "background": "#E0F7FA", 
+            "text": "#006064"         
+        },
+        {
+            "background": "#FFF9C4",  
+            "text": "#F57F17"         
+        },
+        {
+            "background": "#FFE0B2",  
+            "text": "#E65100"         
+        },
+        {
+
+            "text": "#AD1457"         
+        },
+        {
+            "background": "#E1BEE7", 
+            "text": "#4A148C"         
+        },
+        {
+            "background": "#D1C4E9",  
+            "text": "#311B92"         
+        },
+        {
+            "background": "#C5CAE9",  
+            "text": "#1A237E"        
+        },
+        {
+            "background": "#C8E6C9",  
+            "text": "#2E7D32"         
+        },
+        {
+            "background": "#FFCDD2",  
+            "text": "#B71C1C"         
+        }
+    ]
+

@@ -1,0 +1,51 @@
+html{
+  background-color:rgb(12, 91, 122);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  height: 250px;
+  width: 40%;
+  margin: auto;
+  margin-top: 10%;
+  background-color: white;
+  color: rgb(12, 91, 122);
+  border-radius: 20px;
+  text-align: end;
+}
+
+.container h2{
+  padding: 60px 20px 20px 20px;
+  text-align: left;
+}
+
+.container h5{
+  font-style: italic;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.button{
+  color : white;
+  background-color: rgb(10, 71, 131);
+  border: solid black 1px;
+  border-radius: 6%;
+  margin-right: 20px;
+  height: 35px;
+  width: 90px;
+  margin-top: 20px;
+}
+
+.button:hover{
+  background-color: rgb(35, 92, 165);
+}
+
+.button:active{
+  background-color: white;
+  color: rgb(18, 74, 139);
+}
+
+.divQuote{
+  height: 70%;
+}
+
