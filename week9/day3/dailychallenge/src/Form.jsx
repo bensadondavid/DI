@@ -10,12 +10,13 @@ const Form = ()=>{
     const [nutsfree, setNutsfree] = useState(false)
     const[lactosefree, setLactosefree] = useState(false)
     const[vegan, setVegan] = useState(false)
+    const [submittedData, setSubmittedData] = useState()
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        name === "firstname" ? setFirstname(value) : setFirstname('undefined')
-        name === "lastname" ? setLastname(value) : setLastname('undefined')
-        name === "email" ? setEmail(value) : setEmail('undefined')
+        if (name === "firstname") setFirstname(value)
+        if ( name === "lastname")  setLastname(value)
+        if(name === "email") setEmail(value)
     };
 
     const handleRadioChange = (e) => {
@@ -42,6 +43,20 @@ const Form = ()=>{
         console.log(`Lactose free : ${lactosefree}`);
         console.log(`Vegan : ${vegan}`);
         console.log(`Destination : ${destination}`);
+
+        const data = {
+            firstname, 
+            lastname,
+            email,
+            gender,
+            nutsfree,
+            lactosefree,
+            vegan,
+            destination
+        }
+
+        setSubmittedData(data)
+
     };
 
 
@@ -79,6 +94,19 @@ const Form = ()=>{
 
         <button onClick={handleSubmit} type="submit"> Submit </button>
         </form>
+
+        {submittedData && (
+                <div>
+                    <h2>Submitted Data</h2>
+                    <p>Firstname: {submittedData.firstname}</p>
+                    <p>Lastname: {submittedData.lastname}</p>
+                    <p>Email: {submittedData.email}</p>
+                    <p>Gender: {submittedData.gender}</p>
+                    <p>Destination: {submittedData.destination}</p>
+                    <p>Nuts free: {submittedData.nutsfree ? "Yes" : "No"}</p>
+                    <p>Lactose free: {submittedData.lactosefree ? "Yes" : "No"}</p>
+                    <p>Vegan: {submittedData.vegan ? "Yes" : "No"}</p>
+                </div>)}
         </>
     )
 }
