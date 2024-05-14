@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 const Color = ()=>{
@@ -9,9 +9,13 @@ const Color = ()=>{
         setFavoriteColor('blue')
     }
 
+    useEffect(()=>{
+        alert('useEffect reached')
+    },[favoriteColor])
+
     return(
         <>
-        <h3>My favorite value is {favoriteColor} </h3>
+        <h3>My favorite color is {favoriteColor} </h3>
         <button onClick={ChangeColor}>Change color</button>
         </>
     )

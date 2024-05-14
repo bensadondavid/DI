@@ -14,15 +14,9 @@ const Event = ()=>{
 
     const [isToogleOn, setIsToogleOn] = useState(true)
 
-    const ChangeTangle = (e)=>{
-        if(isToogleOn == true){
-            setIsToogleOn(false)
-        }
-        else if(isToogleOn == false)
-            {
-                setIsToogleOn(true)
-            }
-        }
+    const ChangeTangle = ()=>{
+        setIsToogleOn(!isToogleOn)
+    }
     
 
 
