@@ -5,7 +5,7 @@ const router = require('./router.js')
 app.use(express.json())
 app.use(express.static('.'))
 
-app.use('/', router)
+
 
 
 

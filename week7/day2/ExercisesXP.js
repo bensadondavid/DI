@@ -21,16 +21,7 @@
 
 
 fetch('https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My')
-.then((response) => {
-    if(response.ok === true){
-        (response.json()).then((data)=>
-        console.log(data))
-    }
-    else{
-        throw new Error('Wrong post')
-    }
-    
-})
+console.log(data);
 
 // // 🌟 Exercise 2 : Giphy API
 
@@ -67,8 +58,8 @@ fetch('https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW
 // // Make sure to check the status of the Response and to catch any occuring errors.
 
 
-const getData = async()=>{
-    let response = await fetch("https://www.swapi.tech/api/starships/9/")
+const getData = async(user)=>{
+    let response = await fetch(user)
     console.log(response)
     if(response.ok){
         let data = await response.json()

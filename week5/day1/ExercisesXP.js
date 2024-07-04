@@ -249,3 +249,5 @@ for(key in names){
 letters.sort()
 let newLetters = letters.join('')
 console.log(newLetters)
+
+date.now()

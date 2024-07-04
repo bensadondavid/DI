@@ -39,7 +39,8 @@ const Calculator = ()=>{
     return(
         <>
         <div className="container">
-            <select name="operations" id="operations" onChange={(e)=>{setOperation(e.target.value)}}>
+            <h1 style={{fontSize : '40px'}}>Welcome on Calculator</h1>
+            <select className="select" name="operations" id="operations" onChange={(e)=>{setOperation(e.target.value)}}>
                     <option>Select an operation</option>
                     <option value='add' >Add</option>
                     <option value='substract'>Substract</option>

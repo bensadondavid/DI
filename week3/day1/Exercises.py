@@ -9,29 +9,29 @@
 # #         self.name = cat_name
 # #         self.age = cat_age
 
-# class Cat:
-#     def __init__(self, cat_name, cat_age,):
-#         self.name = cat_name
-#         self.age = cat_age
+class Cat:
+    def __init__(self, cat_name, cat_age,):
+        self.name = cat_name
+        self.age = cat_age
         
-#     def __str__(self):
-#         return self.name 
+    def __str__(self):
+        return self.name 
         
 
-# Burmilla = Cat('Burmilla', 2)
-# Devon_Rex = Cat('Devon Rex', 1)
-# Chinchilla = Cat('Chinchilla',3)
+Burmilla = Cat('Burmilla', 2)
+Devon_Rex = Cat('Devon Rex', 1)
+Chinchilla = Cat('Chinchilla',3)
 
 
-# def oldest_cat(cats):
-#     the_oldest = max(cats, key = lambda cat : cat.age)
-#     return(the_oldest)
+def oldest_cat(cats):
+    the_oldest = max(cats, key = lambda cat : cat.age)
+    return(the_oldest)
    
-# older_cat = [Burmilla, Devon_Rex, Chinchilla]
-# oldest = oldest_cat(older_cat)
+older_cat = [Burmilla, Devon_Rex, Chinchilla]
+oldest = oldest_cat(older_cat)
 
 
-# print(f'the oldest cat is {oldest_cat(older_cat)} and is {oldest.age} years old.')
+print(f'the oldest cat is {oldest_cat(older_cat)} and is {oldest.age} years old.')
 
 
 # 🌟 Exercise 2 : Dogs
@@ -50,31 +50,31 @@
 
 
 
-# class Dog:
-#     def __init__(self, dog_name, dog_height):
-#         self.name = dog_name
-#         self.height = dog_height
+class Dog:
+    def __init__(self, dog_name, dog_height):
+        self.name = dog_name
+        self.height = dog_height
         
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
     
-#     def bark(self):
-#         return(f'{self.name} goes woof')
+    def bark(self):
+        return(f'{self.name} goes woof')
         
-#     def jump(self):
-#         return(f'{self.name} jumps {self.height * 2} cm')   
+    def jump(self):
+        return(f'{self.name} jumps {self.height * 2} cm')   
         
-# davids_hogs = Dog('Rex', 50)
+davids_hogs = Dog('Rex', 50)
 
-# print(f'{davids_hogs.bark()} and {davids_hogs.jump()} cm high')
+print(f'{davids_hogs.bark()} and {davids_hogs.jump()} cm high')
 
-# sarahs_dog = Dog('Teacup', 20)
-# print(f'{sarahs_dog.bark()} and {sarahs_dog.jump()} cm high')
+sarahs_dog = Dog('Teacup', 20)
+print(f'{sarahs_dog.bark()} and {sarahs_dog.jump()} cm high')
 
-# if sarahs_dog.height > davids_hogs.height:
-#     print(sarahs_dog.name)
-# else:
-#     print(davids_hogs.name)
+if sarahs_dog.height > davids_hogs.height:
+    print(sarahs_dog.name)
+else:
+    print(davids_hogs.name)
 
 
     
@@ -97,17 +97,17 @@
 # # and she’s buying a stairway to heaven
        
 
-# class Song :
-#     def __init__(self, lyrics) :
-#         self.lyrics = lyrics
+class Song :
+    def __init__(self, lyrics) :
+        self.lyrics = lyrics
         
-#     def sing_me_a_song(self) :
-#         for line in self.lyrics:
-#             print(line)
+    def sing_me_a_song(self) :
+        for line in self.lyrics:
+            print(line)
             
-# starway = Song(['There’s a lady who\'s sure',"all that glitters is gold", "and she’s buying a stairway to heaven"])
+starway = Song(['There’s a lady who\'s sure',"all that glitters is gold", "and she’s buying a stairway to heaven"])
 
-# starway.sing_me_a_song()
+starway.sing_me_a_song()
             
             
 # Exercise 4 : Afternoon At The Zoo

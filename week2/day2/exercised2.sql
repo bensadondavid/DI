@@ -1,0 +1,4 @@
+--SELECT * FROM items ORDER BY price
+--SELECT * FROM items WHERE PRICE > 80 ORDER BY price DESC
+--SELECT first_name, last_name FROM customers ORDER BY first_name ASC
+--SELECT last_name FROM customers ORDER BY last_name DESC

@@ -20,7 +20,7 @@ let colors =   [
     "#FBC2EB",
     "#F6E6E4",
     "#F9D5A7",
-    "#F9F9F9",
+    "white",
     "#ECEAE4",
     "#ECDCC9",
     "#E9C46A",

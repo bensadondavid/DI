@@ -36,3 +36,11 @@ button{
   background-color: rgb(88, 88, 222);
   border-radius: 7px;
 }
+
+.select{
+  background-color: rgb(133, 98, 166);
+  height: 30px;
+  width: 150px;
+  color: rgb(229, 207, 207);
+  font-size: 13px;
+}

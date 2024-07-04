@@ -3,11 +3,11 @@ body{
 }
 
 header{
-
     background-color: #f4f4f4;
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.2fr;
-    align-items:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
     gap: 10px;
     font-family: "Orbitron", sans-serif;
     margin-bottom: 10vh;
@@ -19,12 +19,18 @@ header h1{
     color: #003366;
 }
 
+.searchandbutton{
+    display: flex;
+    flex-direction: row;
+}
+
 #search-bar{
     margin-right: 3%;
     background-color: rgb(195, 193, 193);
     border-radius: 0%;
     font-size: larger;
     color: #003366;
+    width: 30vw;
 }
 
 header button{
@@ -50,12 +56,13 @@ input::placeholder {
 }
 
 .containerofcard{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
+    width: 70vw;
+    flex-wrap: wrap;
 }
 
 .card-container{

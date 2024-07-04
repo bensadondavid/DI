@@ -53,23 +53,23 @@ Violet()
 // Hint : Use the array methods taught in class and ternary operator.
 
 
-const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
-const ordinal = ["th","st","nd","rd"];
-let length = colors.length
+// const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+// const ordinal = ["th","st","nd","rd"];
+// let length = colors.length
 
-for(i = 0; i<length; i++){
-    if(i < 3){
-        console.log(`${i+1}${ordinal[i+1]} choice is ${colors[i]}`)
-    }
-    else {
-        console.log(`${i+1}${ordinal[0]} choice is ${colors[i]}`)
-    }
-}
+// for(i = 0; i<length; i++){
+//     if(i < 3){
+//         console.log(`${i+1}${ordinal[i+1]} choice is ${colors[i]}`)
+//     }
+//     else {
+//         console.log(`${i+1}${ordinal[0]} choice is ${colors[i]}`)
+//     }
+// }
 
-colors.forEach(function(item, i){
-    let suffix = (i < 3) ? ordinal[i+1] : ordinal[0]
-    console.log(`${i+1} ${suffix} choice is ${colors[i]}`)
-})
+// colors.forEach(function(item, i){
+//     let suffix = (i < 3) ? ordinal[i+1] : ordinal[0]
+//     console.log(`${i+1} ${suffix} choice is ${colors[i]}`)
+// })
 
 
 // Exercise 3 : Analyzing
@@ -93,8 +93,8 @@ colors.forEach(function(item, i){
 // console.log(newArray);
 
 
-1. ['bread', "carrot", "potato", 'chicken', "apple", "orange"];
-2. ['u' ,'s' ,'s']
+// 1. ['bread', "carrot", "potato", 'chicken', "apple", "orange"];
+// 2. ['u' ,'s' ,'s']
 
 
 // 🌟 Exercise 4 : Employees

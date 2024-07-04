@@ -3,6 +3,7 @@ const app = express()
 const router = require('./route') 
 
 app.use(express.json())
+app.use(express.static('public'))
 
 app.use('/', router)
 

@@ -8,13 +8,17 @@ h1{
 .big-container{
     display: flex;
     justify-content: center;
+    border: solid 7px rgb(168, 164, 164);
+    width: 1135px;
+    margin: auto;
+
 }
 
 .color{
-    border:black solid 1px;
-    background-color:rgb(187, 162, 197);
+    border:grey solid 1px;
+    background-color: white;
     width: 250px;
-    height: 502px;
+    height: 504px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 

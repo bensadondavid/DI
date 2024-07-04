@@ -35,12 +35,12 @@ router.post('/quizz', (req, res)=>{
     let answer = triviaQuestions[index].answer.toLowerCase()
     if(req.body.answer === answer){
         score++
-        index++
         res.json({message : 'Great answer !'})
     }
     else{
         res.json({message : 'Wrong answer'})
     }
+    index++
 })
 
 router.get('/quizz/score', (req, res)=>{
